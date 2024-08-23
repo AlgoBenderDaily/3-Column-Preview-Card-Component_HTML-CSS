@@ -128,12 +128,6 @@ p {
   place-content: center;
 }
 
-.car-type__button:hover,
-.car-type__button:focus-visible {
-  background-color: #ffffff00;
-  border: 2px solid #fff;
-}
-
 #sedan {
   color: var(--SEDANS-BG);
 }
@@ -146,11 +140,45 @@ p {
   color: var(--LUXURY-BG);
 }
 
-#sedan:hover,
-#sedan:focus-visible,
-#suvs:hover,
-#suvs:focus-visible,
-#luxury:hover,
-#luxury:focus-visible {
-  color: #fff;
+/* Desktop */
+@media screen and (min-width: 720px) {
+  .main__card {
+    width: 920px;
+    height: 500px;
+    margin: 171px 260px 129px 260px;
+    flex-flow: row;
+  }
+
+  .main__card__car-type {
+    padding: 48px 47.5px;
+    width: 307px;
+    height: 500px;
+  }
+
+  .sedan {
+    border-radius: 8px 0 0 8px;
+  }
+
+  .luxury {
+    border-radius: 0 8px 8px 0;
+  }
+
+  p {
+    margin-bottom: 83px;
+  }
+
+  #sedan:hover,
+  #sedan:focus-visible,
+  #suvs:hover,
+  #suvs:focus-visible,
+  #luxury:hover,
+  #luxury:focus-visible {
+    color: #fff;
+  }
+
+  .car-type__button:hover,
+  .car-type__button:focus-visible {
+    background-color: #ffffff00;
+    border: 2px solid #fff;
+  }
 }
